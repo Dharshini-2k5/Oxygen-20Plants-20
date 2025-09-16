@@ -115,7 +115,9 @@ export function ShopProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = useState<CartLineItem[]>([]);
   const [wishlist, setWishlist] = useState<Set<string>>(new Set());
   const [search, setSearch] = useState("");
-  const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set());
+  const [activeCategories, setActiveCategories] = useState<Set<Category>>(
+    new Set(),
+  );
 
   const addToCart = (id: string) => {
     setCart((prev) => {
@@ -139,7 +141,9 @@ export function ShopProvider({ children }: { children: React.ReactNode }) {
     setCart((prev) =>
       prev
         .map((l) =>
-          l.productId === id ? { ...l, quantity: Math.max(1, l.quantity + delta) } : l,
+          l.productId === id
+            ? { ...l, quantity: Math.max(1, l.quantity + delta) }
+            : l,
         )
         .filter((l) => l.quantity > 0),
     );

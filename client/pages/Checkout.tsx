@@ -1,2 +1,4 @@
 import Placeholder from "./Placeholder";
-export default function Checkout() { return <Placeholder title="Checkout" />; }
+export default function Checkout() {
+  return <Placeholder title="Checkout" />;
+}

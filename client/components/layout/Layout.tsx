@@ -25,7 +25,10 @@ function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-gradient-to-b from-background/95 to-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-2 font-extrabold text-xl tracking-tight">
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-extrabold text-xl tracking-tight"
+        >
           <Leaf className="text-primary" />
           Oxygen Plants
         </Link>
@@ -86,16 +89,33 @@ function SiteFooter() {
             <Leaf className="text-primary" /> Oxygen Plants
           </div>
           <p className="mt-2 max-w-sm">
-            Healthy plants, thoughtful tools, and beautiful pots delivered to your door.
+            Healthy plants, thoughtful tools, and beautiful pots delivered to
+            your door.
           </p>
         </div>
         <div>
           <p className="font-semibold text-foreground">Shop</p>
           <ul className="mt-2 space-y-1">
-            <li><a href="/products" className="hover:text-primary">All products</a></li>
-            <li><a href="/" className="hover:text-primary">Plants</a></li>
-            <li><a href="/" className="hover:text-primary">Pots</a></li>
-            <li><a href="/" className="hover:text-primary">Tools</a></li>
+            <li>
+              <a href="/products" className="hover:text-primary">
+                All products
+              </a>
+            </li>
+            <li>
+              <a href="/" className="hover:text-primary">
+                Plants
+              </a>
+            </li>
+            <li>
+              <a href="/" className="hover:text-primary">
+                Pots
+              </a>
+            </li>
+            <li>
+              <a href="/" className="hover:text-primary">
+                Tools
+              </a>
+            </li>
           </ul>
         </div>
         <div className="md:text-right">
@@ -104,7 +124,9 @@ function SiteFooter() {
           <p className="mt-1">Mon–Sat, 9am–6pm</p>
         </div>
       </div>
-      <div className="border-t py-4 text-center text-xs text-muted-foreground">© {new Date().getFullYear()} Oxygen Plants. All rights reserved.</div>
+      <div className="border-t py-4 text-center text-xs text-muted-foreground">
+        © {new Date().getFullYear()} Oxygen Plants. All rights reserved.
+      </div>
     </footer>
   );
 }

@@ -5,7 +5,10 @@ import { Input } from "@/components/ui/input";
 
 export default function CartPage() {
   const { cart, products, changeQty, removeFromCart, subtotal } = useShop();
-  const items = cart.map((l) => ({ line: l, product: products.find((p) => p.id === l.productId)! }));
+  const items = cart.map((l) => ({
+    line: l,
+    product: products.find((p) => p.id === l.productId)!,
+  }));
 
   return (
     <Layout>
@@ -16,17 +19,47 @@ export default function CartPage() {
             <p className="text-muted-foreground">Your cart is empty.</p>
           ) : (
             items.map(({ line, product }) => (
-              <div key={line.productId} className="grid grid-cols-[80px_1fr_auto] items-center gap-4 rounded-lg border p-4">
-                <img src={product.imageUrl} alt={product.name} className="h-20 w-20 rounded object-cover" />
+              <div
+                key={line.productId}
+                className="grid grid-cols-[80px_1fr_auto] items-center gap-4 rounded-lg border p-4"
+              >
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
+                  className="h-20 w-20 rounded object-cover"
+                />
                 <div>
                   <p className="font-medium">{product.name}</p>
-                  <p className="text-sm text-muted-foreground">₹{product.price} • {product.category}</p>
+                  <p className="text-sm text-muted-foreground">
+                    ₹{product.price} • {product.category}
+                  </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Button variant="secondary" size="sm" onClick={() => changeQty(product.id, -1)}>-</Button>
-                  <Input className="w-14 text-center" readOnly value={line.quantity} />
-                  <Button variant="secondary" size="sm" onClick={() => changeQty(product.id, 1)}>+</Button>
-                  <Button variant="ghost" onClick={() => removeFromCart(product.id)}>Remove</Button>
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => changeQty(product.id, -1)}
+                  >
+                    -
+                  </Button>
+                  <Input
+                    className="w-14 text-center"
+                    readOnly
+                    value={line.quantity}
+                  />
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => changeQty(product.id, 1)}
+                  >
+                    +
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    onClick={() => removeFromCart(product.id)}
+                  >
+                    Remove
+                  </Button>
                 </div>
               </div>
             ))

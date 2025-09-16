@@ -7,7 +7,11 @@ import { Sprout, Scissors, Package2, Leaf } from "lucide-react";
 import type { Category } from "@shared/api";
 import type { ComponentType } from "react";
 
-const CATEGORY_META: { key: Category; label: string; icon: ComponentType<any> }[] = [
+const CATEGORY_META: {
+  key: Category;
+  label: string;
+  icon: ComponentType<any>;
+}[] = [
   { key: "Plants", label: "Plants", icon: Sprout },
   { key: "Pots", label: "Pots", icon: Package2 },
   { key: "Tools", label: "Tools", icon: Scissors },
@@ -24,12 +28,15 @@ export default function Index() {
       {/* HERO */}
       <section className="container grid lg:grid-cols-2 gap-10 items-center py-10 md:py-16">
         <div>
-          <Badge className="bg-primary/15 text-primary" variant="secondary">Free delivery over ₹999</Badge>
+          <Badge className="bg-primary/15 text-primary" variant="secondary">
+            Free delivery over ₹999
+          </Badge>
           <h1 className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
             Grow a happier home with Oxygen Plants
           </h1>
           <p className="mt-3 text-muted-foreground max-w-prose">
-            Premium indoor plants, eco-friendly pots, and gardener-approved tools. Handpicked for beginners and pros alike.
+            Premium indoor plants, eco-friendly pots, and gardener-approved
+            tools. Handpicked for beginners and pros alike.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild>
@@ -40,17 +47,23 @@ export default function Index() {
             </Button>
           </div>
           <ul className="mt-6 grid grid-cols-3 gap-4 text-sm">
+            <li className="rounded-lg border p-3 text-center">100+ plants</li>
             <li className="rounded-lg border p-3 text-center">
-              100+ plants
+              7-day plant guarantee
             </li>
-            <li className="rounded-lg border p-3 text-center">7-day plant guarantee</li>
-            <li className="rounded-lg border p-3 text-center">Secure payments</li>
+            <li className="rounded-lg border p-3 text-center">
+              Secure payments
+            </li>
           </ul>
         </div>
         <div className="relative">
           <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 via-emerald-200/40 to-transparent blur-2xl" />
           <div className="aspect-[4/3] overflow-hidden rounded-3xl border shadow-xl bg-muted/40">
-            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=60" alt="Featured plant" className="h-full w-full object-cover" />
+            <img
+              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=60"
+              alt="Featured plant"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -73,7 +86,11 @@ export default function Index() {
       {/* PROMO STRIP */}
       <section className="container">
         <div className="rounded-xl border bg-gradient-to-r from-emerald-50 to-teal-50 p-4 md:p-6">
-          <p className="text-sm md:text-base"><span className="font-semibold">Spring Offer:</span> Get 15% off on 3+ plants. Use code <span className="font-mono font-semibold">GREEN15</span>.</p>
+          <p className="text-sm md:text-base">
+            <span className="font-semibold">Spring Offer:</span> Get 15% off on
+            3+ plants. Use code{" "}
+            <span className="font-mono font-semibold">GREEN15</span>.
+          </p>
         </div>
       </section>
 
@@ -81,10 +98,16 @@ export default function Index() {
       <section id="shop" className="container py-10 md:py-14">
         <div className="flex items-end justify-between">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">Recommended for you</h2>
-            <p className="text-muted-foreground">Curated picks that thrive indoors</p>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Recommended for you
+            </h2>
+            <p className="text-muted-foreground">
+              Curated picks that thrive indoors
+            </p>
           </div>
-          <a href="/products" className="text-sm text-primary hover:underline">View all</a>
+          <a href="/products" className="text-sm text-primary hover:underline">
+            View all
+          </a>
         </div>
         <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {visibleProducts.slice(0, 8).map((p) => (
@@ -98,15 +121,21 @@ export default function Index() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="rounded-xl border p-6">
             <h3 className="font-semibold">Expert support</h3>
-            <p className="text-sm text-muted-foreground mt-1">Care guides and plant doctors on chat.</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              Care guides and plant doctors on chat.
+            </p>
           </div>
           <div className="rounded-xl border p-6">
             <h3 className="font-semibold">Sustainable packaging</h3>
-            <p className="text-sm text-muted-foreground mt-1">Plastic-free, secure, and recyclable.</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              Plastic-free, secure, and recyclable.
+            </p>
           </div>
           <div className="rounded-xl border p-6">
             <h3 className="font-semibold">Quality guarantee</h3>
-            <p className="text-sm text-muted-foreground mt-1">No-questions 7-day replacement.</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              No-questions 7-day replacement.
+            </p>
           </div>
         </div>
       </section>

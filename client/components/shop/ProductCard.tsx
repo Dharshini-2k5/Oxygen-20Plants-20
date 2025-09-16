@@ -7,7 +7,8 @@ import { useShop } from "@/context/shop";
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart, toggleWishlist, wishlist } = useShop();
   const wishlisted = wishlist.has(product.id);
-  const hasDiscount = product.originalPrice && product.originalPrice > product.price;
+  const hasDiscount =
+    product.originalPrice && product.originalPrice > product.price;
 
   return (
     <Card className="group overflow-hidden">
@@ -36,7 +37,9 @@ export default function ProductCard({ product }: { product: Product }) {
           {hasDiscount ? (
             <>
               <span className="text-lg font-bold">₹{product.price}</span>
-              <span className="text-sm line-through text-muted-foreground">₹{product.originalPrice}</span>
+              <span className="text-sm line-through text-muted-foreground">
+                ₹{product.originalPrice}
+              </span>
             </>
           ) : (
             <span className="text-lg font-bold">₹{product.price}</span>
