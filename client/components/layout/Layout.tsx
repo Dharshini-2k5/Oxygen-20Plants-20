@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 import { useShop } from "@/context/shop";
 import { cn } from "@/lib/utils";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+import type { ReactNode } from "react";
+
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <SiteHeader />
