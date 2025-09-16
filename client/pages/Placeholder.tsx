@@ -1,5 +1,7 @@
 import Layout from "@/components/layout/Layout";
 
+import type { ReactNode } from "react";
+
 export default function Placeholder({ title }: { title: string }) {
   return (
     <Layout>
