@@ -26,7 +26,7 @@ export default function Index() {
         <div>
           <Badge className="bg-primary/15 text-primary" variant="secondary">Free delivery over ₹999</Badge>
           <h1 className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-            Grow a happier home with GreenNest Nursery
+            Grow a happier home with Oxygen Plants
           </h1>
           <p className="mt-3 text-muted-foreground max-w-prose">
             Premium indoor plants, eco-friendly pots, and gardener-approved tools. Handpicked for beginners and pros alike.
@@ -50,7 +50,7 @@ export default function Index() {
         <div className="relative">
           <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 via-emerald-200/40 to-transparent blur-2xl" />
           <div className="aspect-[4/3] overflow-hidden rounded-3xl border shadow-xl bg-muted/40">
-            <img src="/placeholder.svg" alt="Featured plant" className="h-full w-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=60" alt="Featured plant" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
