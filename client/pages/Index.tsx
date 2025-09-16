@@ -5,8 +5,9 @@ import ProductCard from "@/components/shop/ProductCard";
 import { useShop } from "@/context/shop";
 import { Sprout, Scissors, Package2, Leaf } from "lucide-react";
 import type { Category } from "@shared/api";
+import type { ComponentType } from "react";
 
-const CATEGORY_META: { key: Category; label: string; icon: React.ComponentType<any> }[] = [
+const CATEGORY_META: { key: Category; label: string; icon: ComponentType<any> }[] = [
   { key: "Plants", label: "Plants", icon: Sprout },
   { key: "Pots", label: "Pots", icon: Package2 },
   { key: "Tools", label: "Tools", icon: Scissors },
