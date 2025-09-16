@@ -29,9 +29,11 @@ const sampleProducts: Product[] = [
     originalPrice: 499,
     rating: 4.7,
     tags: ["easy", "air-purifier"],
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1523345863763-86ff61a80b46?auto=format&fit=crop&w=900&q=60",
     inStock: true,
-    description: "Hardy indoor vine with heart-shaped leaves; thrives in indirect light.",
+    description:
+      "Hardy indoor vine with heart-shaped leaves; thrives in indirect light.",
   },
   {
     id: "p2",
@@ -41,7 +43,8 @@ const sampleProducts: Product[] = [
     originalPrice: 449,
     rating: 4.8,
     tags: ["low-light"],
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1614594857222-1993bd3d8a8e?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
   {
@@ -50,7 +53,8 @@ const sampleProducts: Product[] = [
     category: "Pots",
     price: 199,
     rating: 4.4,
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1600490036275-35f8d20b0a2e?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
   {
@@ -59,7 +63,8 @@ const sampleProducts: Product[] = [
     category: "Soil",
     price: 299,
     rating: 4.6,
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1618477462167-3c4aa1bea126?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
   {
@@ -68,7 +73,8 @@ const sampleProducts: Product[] = [
     category: "Tools",
     price: 249,
     rating: 4.5,
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1623065427105-8c0b2d24d782?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
   {
@@ -78,7 +84,8 @@ const sampleProducts: Product[] = [
     price: 449,
     originalPrice: 549,
     rating: 4.3,
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611043714658-b3a01c3a5b1b?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
   {
@@ -87,7 +94,8 @@ const sampleProducts: Product[] = [
     category: "Plants",
     price: 799,
     rating: 4.6,
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1524594154908-edd342ea4c9b?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
   {
@@ -96,7 +104,8 @@ const sampleProducts: Product[] = [
     category: "Tools",
     price: 199,
     rating: 4.1,
-    imageUrl: "/placeholder.svg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1592973539934-c8d4e0172c2d?auto=format&fit=crop&w=900&q=60",
     inStock: true,
   },
 ];
